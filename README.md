@@ -1,2 +1,2 @@
-# express-mysql
-Express(TypeScript) + MySQLのサンプル
+# express-typeorm-jest
+Express(TypeScript) + TypeORM + Jestのサンプル
