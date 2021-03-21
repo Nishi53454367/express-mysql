@@ -18,7 +18,12 @@
   },
   "scripts": {
     "start": "ts-node-dev server.ts",
-    "test": "jest --coverage --detectOpenHandles --forceExit"
+    "test": "jest --coverage --detectOpenHandles --forceExit",
+    "migrate:generate": "ts-node node_modules/.bin/typeorm migration:generate",
+    "migrate:run": "ts-node node_modules/.bin/typeorm migration:run",
+    "migrate:rollback": "ts-node node_modules/.bin/typeorm migration:revert",
+    "seed:config": "ts-node node_modules/typeorm-seeding/dist/cli.js config",
+    "seed:run": "ts-node node_modules/typeorm-seeding/dist/cli.js seed"
   },
   "devDependencies": {
     "@types/faker": "^5.1.7",
