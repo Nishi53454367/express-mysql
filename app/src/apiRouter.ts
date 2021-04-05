@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
-import getUsers from './src/routes/getUsers';
+import getUsers from './routes/getUsers';
 
 // ルーターレベルでのルーティング設定
 const apiRouter = express.Router();

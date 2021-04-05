@@ -1,8 +1,8 @@
 import { Server } from 'http';
 import supertest from 'supertest';
 import express from 'express';
-import apiRouter from './apiRouter';
-import User from './src/db/entities/User';
+import apiRouter from '../src/apiRouter';
+import User from '../src/db/entities/User';
 
 // Server
 let server: Server;

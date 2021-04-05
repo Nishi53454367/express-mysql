@@ -2,7 +2,7 @@
   "name": "express-typeorm-jest",
   "version": "1.0.0",
   "description": "express-typeorm-jest sample",
-  "main": "app/server.ts",
+  "main": "src/server.ts",
   "license": "MIT",
   "dependencies": {
     "@types/express": "^4.17.11",
@@ -17,7 +17,8 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "start": "ts-node-dev server.ts",
+    "start": "ts-node-dev src/server.ts",
+    "build": "ts-node src/server.ts",
     "test": "jest --coverage --detectOpenHandles --forceExit",
     "migrate:generate": "ts-node node_modules/.bin/typeorm migration:generate",
     "migrate:run": "ts-node node_modules/.bin/typeorm migration:run",
